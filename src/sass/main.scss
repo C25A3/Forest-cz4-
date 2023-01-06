@@ -1,0 +1,149 @@
+:root {
+	--font-color: #000;
+	--white: #fff;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+// navigation
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+	&__links-desktop {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		font-size: 1.5rem;
+	}
+
+	&__link-desktop {
+		padding: 2em;
+		color: var(--font-color);
+		transition: color 0.3s, background-color 0.3s;
+	}
+
+	&__link-desktop:hover {
+		background-color: #000;
+		color: #fff;
+	}
+
+	&__logo {
+		padding: 0.9em;
+		font-size: 2.5rem;
+		p,
+		a {
+			color: var(--font-color);
+		}
+	}
+
+	&-mobile {
+		display: none;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #fff;
+
+		&--active {
+			display: flex;
+		}
+
+		&__links {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		&__link {
+			font-size: 3em;
+			padding: 0.75em;
+			color: var(--font-color);
+		}
+	}
+
+	.burger-btn {
+		position: absolute;
+		right: 20px;
+		padding: 2em 0;
+		background: none;
+		border: none;
+		cursor: pointer;
+		z-index: 100;
+
+		&__bars,
+		&__bars::after,
+		&__bars::before {
+			height: 3px;
+			width: 30px;
+			background-color: #000;
+			border-radius: 25px;
+		}
+
+		&__bars {
+			position: relative;
+
+			&::before,
+			&::after {
+				position: absolute;
+				content: '';
+				transition: transform 0.3s;
+			}
+
+			&::before {
+				top: -8px;
+				left: 0;
+			}
+
+			&::after {
+				top: 8px;
+				left: 0;
+			}
+
+			&--active {
+				background-color: transparent;
+
+				&::after {
+					transform: rotate(45deg);
+					top: 0;
+				}
+
+				&::before {
+					top: 0;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+	}
+}
+
+.test {
+	background-color: #333;
+	height: 100vh;
+	width: 100%;
+}
+
+@import 'medium.scss';

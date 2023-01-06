@@ -1,0 +1,14 @@
+@media (min-width: 768px) {
+    .nav {
+
+        &__links-desktop {
+            display: flex;
+        }
+
+
+        .burger-btn {
+            display: none;
+        }
+
+    }
+}
