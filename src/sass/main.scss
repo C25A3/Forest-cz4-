@@ -15,11 +15,15 @@ html {
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Raleway', sans-serif;
 }
 
 a {
 	text-decoration: none;
+}
+
+button {
+	font-family: 'Raleway', sans-serif;
 }
 
 .hero-bg {
@@ -259,14 +263,122 @@ a {
 //OFFER
 
 .offer {
-
 	.section-heading {
 		margin-bottom: 0.7em;
 	}
-	
+
 	&__subtitle {
 		font-size: 1.7rem;
 		text-align: center;
+	}
+
+	&__cards-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		margin: 3em 0;
+	}
+
+	&__card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		max-width: 300px;
+		min-width: 250px;
+		margin: 3em;
+		padding: 3em;
+		box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.3);
+		border-radius: 6px;
+
+		&-title {
+			font-size: 2.5rem;
+		}
+
+		&-price {
+			font-weight: 700;
+			font-size: 3.7rem;
+			margin: 0.5em;
+		}
+
+		&-option {
+			margin-bottom: 0.4em;
+			font-size: 1.5rem;
+			list-style: none;
+
+			i {
+				margin-right: 0.25em;
+				color: rgb(54, 245, 7);
+			}
+		}
+		&-button {
+			margin-top: 1.5em;
+			padding: 0.6em 3.75em;
+			font-size: 1.5rem;
+			background: none;
+			border: none;
+			box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.3);
+			border-radius: 6px;
+			cursor: pointer;
+
+			&--green {
+				background-color: rgb(8, 197, 65);
+				box-shadow: 1px 1px 5px 1px rgba(8, 197, 65, 0.514);
+			}
+		}
+	}
+}
+
+// FOOTER
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 3em;
+	background-color: rgb(230, 230, 230);
+	border-bottom: 1px solid #333;
+
+	&__menu-box {
+		display: flex;
+	}
+
+	&__menu {
+		margin: 1.5em 3em;
+		list-style: none;
+
+		&-item {
+			font-size: 1.4rem;
+			margin: 1.5em 0;
+
+			a {
+				color: var(--font-color);
+			}
+		}
+
+		&-title {
+			font-weight: 700;
+			font-size: 1.8rem;
+		}
+	}
+
+	.nav__logo {
+		margin-top: 1em;
+		font-size: 3.7rem;
+	}
+
+	&__year-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2.5em 0;
+		background-color: rgb(230, 230, 230);
+	}
+
+	&__year {
+		font-size: 1.4rem;
 	}
 }
 
