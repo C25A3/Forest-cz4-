@@ -1,0 +1,70 @@
+@media (min-width: 976px) {
+	.section-heading {
+		margin-bottom: 2em;
+	}
+
+	.header {
+		.hero-img {
+			height: 50vh;
+		}
+
+		&__title {
+			font-size: 3.5rem;
+		}
+
+		&__text {
+			font-size: 2rem;
+		}
+	}
+
+	.aboutus {
+		&__container {
+			display: flex;
+			justify-content: center;
+			align-items: start;
+			flex-direction: row;
+			margin: 0 3em 8em;
+		}
+		&__img {
+			max-width: 45%;
+		}
+
+		&__text-box {
+			text-align: left;
+			margin-left: 5em;
+			width: 55%;
+		}
+
+		&__title {
+			font-size: 2.5rem;
+			margin-bottom: 1em;
+		}
+
+		&__text {
+			font-size: 1.7rem;
+			line-height: 1.7;
+		}
+	}
+
+	.hero-img {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 25vh;
+		background-image: url(../img/hero-big.jpg);
+	}
+
+	.hero-bg {
+		background-color: rgba(0, 0, 0, 0.503);
+	}
+
+	.hero-text {
+		text-align: center;
+		margin: 1em;
+		padding: 1em 15%;
+		font-size: 2.5rem;
+		color: #fff;
+		border: 1px solid #fff;
+		z-index: 1;
+	}
+}
