@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pl">
 
- <!-- @include 'head.kit' -->
+<!-- @include 'head.kit' -->
 
-<body>
+<body class="main-page">
     <!-- @include 'nav.kit' -->
-    <div class="header">
+    <header class="header section" id="header">
         <div class="hero-img">
             <div class="hero-bg"></div>
             <div class="header__content">
@@ -14,9 +14,9 @@
             </div>
             <div class="box"></div>
         </div>
-    </div>
+    </header>
     <main>
-        <section id="aboutus" class="aboutus wrapper">
+        <section id="aboutus" class="aboutus wrapper section">
             <h2 class="section-heading">o nas</h2>
             <div class="aboutus__container">
                 <img class="aboutus__img" src="dist/img/aboutus.jpg" alt="Kamień na środku jeziora w lesie">
@@ -32,11 +32,11 @@
                 </div>
             </div>
         </section>
-        <section class="hero-img">
+        <section class="hero-img section" id="aboutus">
             <div class="hero-bg"></div>
             <p class="hero-text">Przygoda dla całej rodziny</p>
         </section>
-        <section class="offer wrapper" id="offer">
+        <section class="offer wrapper section" id="offer">
             <h2 class="section-heading">oferta</h2>
             <p class="offer__subtitle">Wybierz jedną z naszych wspaniałych ofert!</p>
             <div class="offer__cards-box">
@@ -46,27 +46,32 @@
                     <ul class="offer__card-options">
                         <li class="offer__card-option"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                         <li class="offer__card-option"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
-                        <li class="offer__card-option"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
-                        <li class="offer__card-option"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
-                        <li class="offer__card-option"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                        <li class="offer__card-option offer__card-option--disabled"><i class="fa-solid fa-minus"></i>
+                            opcja poza pakietem</li>
+                        <li class="offer__card-option offer__card-option--disabled"><i class="fa-solid fa-minus"></i>
+                            opcja poza pakietem</li>
+                        <li class="offer__card-option offer__card-option--disabled"><i class="fa-solid fa-minus"></i>
+                            opcja poza pakietem</li>
                     </ul>
                     <button class="offer__card-button">Wybierz</button>
                 </div>
                 <div class="offer__card">
-                    <div class="offer__card-title">Demo</div>
-                    <div class="offer__card-price">$0</div>
+                    <div class="offer__card-title">Standard</div>
+                    <div class="offer__card-price">$99</div>
                     <ul class="offer__card-options">
                         <li class="offer__card-option"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                         <li class="offer__card-option"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                         <li class="offer__card-option"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
-                        <li class="offer__card-option"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
-                        <li class="offer__card-option"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
+                        <li class="offer__card-option offer__card-option--disabled"><i class="fa-solid fa-minus"></i>
+                            opcja poza pakietem</li>
+                        <li class="offer__card-option offer__card-option--disabled"><i class="fa-solid fa-minus"></i>
+                            opcja poza pakietem</li>
                     </ul>
                     <button class="offer__card-button offer__card-button--green">Wybierz</button>
                 </div>
                 <div class="offer__card">
-                    <div class="offer__card-title">Demo</div>
-                    <div class="offer__card-price">$0</div>
+                    <div class="offer__card-title">Premium</div>
+                    <div class="offer__card-price">$299</div>
                     <ul class="offer__card-options">
                         <li class="offer__card-option"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
                         <li class="offer__card-option"><i class="fa-solid fa-check"></i> opcja w pakiecie</li>
@@ -77,37 +82,11 @@
                     <button class="offer__card-button">Wybierz</button>
                 </div>
             </div>
+            <p class="offer__text"><a href="oferty.html">Zobacz więcej</a> lub <a href="kontakt.html">skontaktuj się z
+                    nami</a> w celu spersonalizowania swojej oferty</p>
         </section>
     </main>
-    <footer class="footer">
-        <div class="nav__logo">
-            <a href="#"><i class="fa-solid fa-tree"></i> Forest</a>
-        </div>
-        <div class="footer__menu-box">
-            <ul class="footer__menu">
-                <li class="footer__menu-title footer__menu-item"><a href="">O nas</a></li>
-                <li class="footer__menu-item"><a href="">Historia</a></li>
-                <li class="footer__menu-item"><a href="">Parki</a></li>
-                <li class="footer__menu-item"><a href="">Opinie</a></li>
-            </ul>
-            <ul class="footer__menu">
-                <li class="footer__menu-title footer__menu-item"><a href="">Nasza firma</a></li>
-                <li class="footer__menu-item"><a href="">Praca</a></li>
-                <li class="footer__menu-item"><a href="">Kadry</a></li>
-                <li class="footer__menu-item"><a href="">Zarząd</a></li>
-            </ul>
-            <ul class="footer__menu">
-                <li class="footer__menu-title footer__menu-item"><a href="">Dokumenty</a></li>
-                <li class="footer__menu-item"><a href="">Wnioski</a></li>
-                <li class="footer__menu-item"><a href="">Rezerwacje</a></li>
-            </ul>
-        </div>
-
-    </footer>
-    <div class="footer__year-box">
-        <p class="footer__year">&copy<span class="year"></span> Forest Group Company Ltd.</p>
-    </div>
-    <div class="test"></div>
+    <!-- @include footer.kit -->
     <script src="dist/js/main.min.js"></script>
 </body>
 
